@@ -1,0 +1,94 @@
+{
+  "target": "scanme.nmap.org",
+  "host": "scanme.nmap.org",
+  "ip": "45.33.32.156",
+  "scan_date": "2026-08-20 21:25:47",
+  "author": "Harsha Nandhan Reddy Gajulapalli",
+  "email": "harshanandhanreddy820@gmail.com",
+  "ports": [
+    {
+      "port": 22,
+      "state": "open",
+      "service": "ssh",
+      "banner": "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13"
+    },
+    {
+      "port": 80,
+      "state": "open",
+      "service": "http",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Fri, 21 Aug 2026 01:26:44 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-"
+    },
+    {
+      "port": 9929,
+      "state": "open",
+      "service": "nping-echo",
+      "banner": "\u0001\u0001\u0000\u0018\ufffd\ufffd,j\ufffd\ufffdU\u0000\u0000\u0000\u0000\ufffd\ufffdn\ufffd\ufffd/\ufffd\u0002Q\u043e@G\ufffdb\ufffd\ufffd<\ufffd`\ufffd\ufffd %)\ufffd\t\ufffd\ufffd\ufffda\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd%H\ufffdJ\u0011J\ufffd\ufffd9eB\ufffd\ufffd\u0014]\ufffd6\ufffd\ufffd\ufffd6r\ufffd\u0018q\ufffdu\ufffd\ufffd"
+    },
+    {
+      "port": 31337,
+      "state": "open",
+      "service": "elite",
+      "banner": null
+    }
+  ],
+  "services": [
+    {
+      "port": 22,
+      "name": "ssh",
+      "version": "OpenSSH_6.6.1p1",
+      "banner": "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13"
+    },
+    {
+      "port": 80,
+      "name": "http",
+      "version": "Apache/2.4.7 (Ubuntu)",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Fri, 21 Aug 2026 01:26:46 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nConnection: close\r\nContent-Type: text/html"
+    },
+    {
+      "port": 9929,
+      "name": "unknown",
+      "version": "",
+      "banner": "\u0001\u0001\u0000\u0018\u0000\ufffd\ufffdhj\ufffd\ufffdW\u0000\u0000\u0000\u0000X\ufffd[\ufffd\u0011\ufffd\ufffd\ufffd_\ufffd=n\u0019\ufffd\u001f\"\ufffdm\ufffda@\ufffd\fXM\ufffd\u0000B\ufffd\ufffd \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0001\ufffdM\u0015\ufffd\u000b\ufffd1\ufffd\ufffd\u021e\u0002\ufffdR.\ufffd\u000b\ufffd7\ufffd\ufffd_\ufffdH}Sb!\u001ep"
+    },
+    {
+      "port": 31337,
+      "name": "unknown",
+      "version": "",
+      "banner": ""
+    }
+  ],
+  "web_findings": [
+    {
+      "test": "sql_injection_error",
+      "vulnerable": false,
+      "severity": "INFO",
+      "evidence": [],
+      "note": "No SQL error string on GET ?id=. Blind SQLi would not show here."
+    },
+    {
+      "test": "reflected_xss",
+      "vulnerable": false,
+      "severity": "INFO",
+      "evidence": [],
+      "note": "Payload not echoed on GET ?q=."
+    },
+    {
+      "test": "security_headers",
+      "vulnerable": true,
+      "severity": "LOW",
+      "status_code": 200,
+      "present": [],
+      "missing": [
+        "Content-Security-Policy",
+        "Strict-Transport-Security",
+        "X-Content-Type-Options",
+        "X-Frame-Options",
+        "Referrer-Policy"
+      ],
+      "note": "Missing headers are hygiene, not a guaranteed exploit."
+    }
+  ],
+  "ssl": null,
+  "note": "Authorized lab use only. Connect-scan + GET heuristics. No CVE lookup.",
+  "duration_sec": 4.06
+}
