@@ -2,7 +2,7 @@
   "target": "scanme.nmap.org",
   "host": "scanme.nmap.org",
   "ip": "45.33.32.156",
-  "scan_date": "2026-08-20 21:25:47",
+  "scan_date": "2026-09-09 00:40:02",
   "author": "Harsha Nandhan Reddy Gajulapalli",
   "email": "harshanandhanreddy820@gmail.com",
   "ports": [
@@ -16,13 +16,13 @@
       "port": 80,
       "state": "open",
       "service": "http",
-      "banner": "HTTP/1.1 200 OK\r\nDate: Fri, 21 Aug 2026 01:26:44 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-"
+      "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 09 Sep 2026 04:40:02 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-"
     },
     {
       "port": 9929,
       "state": "open",
       "service": "nping-echo",
-      "banner": "\u0001\u0001\u0000\u0018\ufffd\ufffd,j\ufffd\ufffdU\u0000\u0000\u0000\u0000\ufffd\ufffdn\ufffd\ufffd/\ufffd\u0002Q\u043e@G\ufffdb\ufffd\ufffd<\ufffd`\ufffd\ufffd %)\ufffd\t\ufffd\ufffd\ufffda\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd%H\ufffdJ\u0011J\ufffd\ufffd9eB\ufffd\ufffd\u0014]\ufffd6\ufffd\ufffd\ufffd6r\ufffd\u0018q\ufffdu\ufffd\ufffd"
+      "banner": "\u0001\u0001\u0000\u0018\ufffdaByj\ufffd\ufffd\"\u0000\u0000\u0000\u0000\u007f\u0006uS\u0016\u0006_\ufffd\ufffd\ufffd\ufffd\ufffd-\ufffd\ufffdv\ufffd\ufffd1\ufffd~\ufffdh\ufffdr\ufffdn\ufffdf\ufffd@\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000n\u06c7\\\ufffd\ufffd\u000f7\u0002\ufffd\ufffd\ufffd\ufffd0\ufffd\ufffd{\ufffd>\ufffd`\u001b#\ufffd\u000bE=\ufffd-\ufffd\ufffdp"
     },
     {
       "port": 31337,
@@ -42,13 +42,13 @@
       "port": 80,
       "name": "http",
       "version": "Apache/2.4.7 (Ubuntu)",
-      "banner": "HTTP/1.1 200 OK\r\nDate: Fri, 21 Aug 2026 01:26:46 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nConnection: close\r\nContent-Type: text/html"
+      "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 09 Sep 2026 04:40:04 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nConnection: close\r\nContent-Type: text/html"
     },
     {
       "port": 9929,
       "name": "unknown",
       "version": "",
-      "banner": "\u0001\u0001\u0000\u0018\u0000\ufffd\ufffdhj\ufffd\ufffdW\u0000\u0000\u0000\u0000X\ufffd[\ufffd\u0011\ufffd\ufffd\ufffd_\ufffd=n\u0019\ufffd\u001f\"\ufffdm\ufffda@\ufffd\fXM\ufffd\u0000B\ufffd\ufffd \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0001\ufffdM\u0015\ufffd\u000b\ufffd1\ufffd\ufffd\u021e\u0002\ufffdR.\ufffd\u000b\ufffd7\ufffd\ufffd_\ufffdH}Sb!\u001ep"
+      "banner": "\u0001\u0001\u0000\u0018\ufffd\ufffd\ufffd\ufffdj\ufffd\ufffd%\u0000\u0000\u0000\u0000\ufffd\\:1>Lzh\ufffd*\u0731\ufffdU,\ufffd\ufffd\u0018\ufffd\u02d4\ufffd\u0007@*:\ufffd,e\ufffd\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdL\f\ufffd~aP \ufffd\ufffd\u001d\ufffdh\u0005\u001d\ufffdd}\ufffd\ufffd\ufffdNh\ufffd\u0277\u0014\ufffd\u0017\u0007\u007f"
     },
     {
       "port": 31337,
@@ -90,5 +90,5 @@
   ],
   "ssl": null,
   "note": "Authorized lab use only. Connect-scan + GET heuristics. No CVE lookup.",
-  "duration_sec": 4.06
+  "duration_sec": 4.9
 }

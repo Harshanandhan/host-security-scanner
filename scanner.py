@@ -94,7 +94,10 @@ def main() -> None:
         if not opened:
             print("No open ports in this set.")
         for item in opened:
-            print(f"  {item['port']:>5}/tcp  {item['service']:12}  {(item.get('banner') or '')[:50]}")
+            raw = (item.get("banner") or "")[:50]
+            # Windows consoles (cp1252) choke on binary banners; keep ASCII-safe preview.
+            preview = "".join(ch if 32 <= ord(ch) < 127 else "." for ch in raw)
+            print(f"  {item['port']:>5}/tcp  {item['service']:12}  {preview}")
 
         svc = ServiceDetector(host)
         for item in opened:
